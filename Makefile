@@ -7,7 +7,7 @@ COMPOSE_FILE = docker-compose.dev.yml
 
 # Common variables
 APP_DIR := .
-CELERY_BIN := $(shell which celery)
+CELERY_BIN := uv run celery
 CELERY_APP := cms
 CELERYD_LOG_LEVEL := INFO
 CELERYD_PID_DIR := $(APP_DIR)/pids
